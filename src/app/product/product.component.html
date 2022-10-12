@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row">
+                <div *ngFor = "let i of dataList.products" class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                          <div class="col">
+                            <img src="{{i.thumbnail}}" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">{{i.title}}</h5>
+                              <p class="card-text">DESCRIPTION:{{i.description}}</p>
+                              <p class="card-text">PRICE:{{i.price}}</p>
+                              <p class="card-text">RATING:{{i.rating}}</p>
+                              <p class="card-text">BRAND:{{i.brand}}</p>
+                              <p class="card-text">CATEGORY:{{i.category}}</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
